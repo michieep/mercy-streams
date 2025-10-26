@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercy Streams - Worship Cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background:linear-gradient(180deg,rgb(150, 188, 192),rgb(40, 107, 114));
+    }
+    
+    /* Header with video background */
+    header {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+    
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 1;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-shadow: 0 0 8px rgba(115, 196, 247, 0.8);
+      animation: fadeIn 5s ease-in-out;
+    }
+     @keyframes fadeIn{
+                            from{opacity: 0; transform: translateY(-20px);}
+                            to {opacity: 1; transform: translateY(0);}
+    }
+     
+    
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      background: rgb(53, 2, 2);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      background: linear-gradient(135deg, teal,rgb(129, 162, 129),white);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px; 
+      background: linear-gradient(45deg, rgb(101, 139, 173), rgb(253, 171, 248));
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgb(6, 81, 81);
+      transform: scale(1.08);
+    }
+   
+
+    #music{
+              background: linear-gradient(135deg, #15665c, #f08edc);
+              color: white;
+              padding: 60px 20px;
+              text-align: center;
+              border: 1px solid white;
+              border-radius: 20px;
+              margin-top: 20px;
+     }
+      h1, h2, h3 {
+      font-family: 'Georgia', serif;
+    }
+
+    /* Container for all cards */
+    .MovesContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Individual card */
+    .MovesCard {
+      background: linear-gradient(135deg,rgb(207, 160, 207),white,pink ,rgb(93, 129, 172));
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* Card hover effect */
+    .MovesCard:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #d291bc, #fcd1e0);
+    }
+
+    /* Card text */
+    .MovesCard h3 {
+      margin-bottom: 10px;
+      color: #154137;
+      font-size: 1.5rem;
+      text-shadow: 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    .MovesCard p {
+      color: #17692e;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    /* Audio styling */
+    .MovesCard audio {
+      width: 100%;
+      outline: none;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      .MovesContainer {
+        grid-template-columns: 1fr; /* stack cards vertically */
+        padding: 10px;
+      }
+
+      .MovesCard {
+        padding: 15px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center; font-style: italic; font-size: 20px;"> Free Shipping all over India </h2>
+  
+  <header id="#home">
+    <video src="img/9695b4c1784f2a3743d7ab4ae649a354 (2).mp4" autoplay muted loop></video>
+    <h1>MERCY STREAMS</h1>
+  </header>
+
+  <nav>
+    <a href="index.htm">HOME</a>
+
+    <a href="#books">BOOKS</a>
+    <a href="#mood">MOOD</a>
+    <a href="#help">HELP CENTER</a>
+    <a href="#about">ABOUT US</a>
+  </nav>
+
+    <section id="music">
+  <div class="MovesContainer">
+    <h2 style="text-align:center; margin-bottom:20px; font-size:2rem;">
+    “He is waiting for you in worship — will you meet Him here?”
+  </h2>
+
+    <div class="MovesCard">
+      <h3>Main Na Darunga - Amit Kamble</h3>
+      <p>Let your heart be lifted in praise.</p>
+      <audio controls>
+        <source src="img/_NA DAROONGA (Psalm 91) _ Vijay Kondapuram ft. Sheldon Bangera, Allen Ganta & Prakruthi Angelina [eCmtObKBNUA].mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="MovesCard">
+      <h3>Hazaro Zubaane Gaaye</h3>
+      <p>Heaven rejoices with your worship.</p>
+      <audio controls>
+        <source src="img/ssvid.net--Hazaaron-Zubane-Ft-Amit-Kamble-Prakruthi-Angelina-Hemant-Sharma_v720P.mp4" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="MovesCard">
+      <h3>Vijeta</h3>
+      <p>Sing and let His presence fill you.</p>
+      <audio controls>
+        <source src="img/audio1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="MovesCard">
+      <h3>Banke Stuti</h3>
+      <p>Sing and let His presence fill you.</p>
+      <audio controls>
+        <source src="img/audio 2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+  </div>
+  </section>
+
+</body>
+</html>
