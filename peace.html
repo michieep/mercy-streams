@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peaceful Bible Verses</title>
+    <style>
+    html{
+      scroll-behavior: smooth;
+    }
+              
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+     background:linear-gradient(180deg,rgb(150, 188, 192),rgb(40, 107, 114));
+      color: white;
+  
+    }
+
+    /* Header with video background */
+    header {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+    
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 1;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-shadow: 0 0 8px rgba(115, 196, 247, 0.8);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 10px;
+      background:linear-gradient(135deg,rgb(6, 81, 81),rgb(129, 191, 191));
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px; 
+      background: linear-gradient(135deg,rgb(85, 140, 145));
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background:rgb(38, 125, 139);
+      transform: scale(1.08);
+    }
+     div h2{
+      position: relative;
+      color: white;
+      font-size: 35px;
+      border: 30%;
+      border-radius: 20%;
+      text-align: center;
+      text-shadow: 0 0 15px 15px(rgb(216, 218, 81));
+      box-shadow: 0 0 15px 15px (palevioletred);
+      animation: typing 3s ease-in-out;
+      gap: 10px top;
+     animation: glow 3s infinite alternate;
+    }
+
+     @keyframes glow {
+  from { text-shadow: 0 0 5px #73c4f7; }
+  to { text-shadow: 0 0 20px #f08edc, 0 0 30px #f08edc; }
+}
+    
+     #peace{
+              background: linear-gradient(135deg, #025046, #2b977e);
+              color: white;
+              padding: 60px 20px;
+              text-align: center;
+              border: 1px solid white;
+              border-radius: 20px;
+              margin-top: 20px;
+     }
+    .verse-container h2{
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    .verse-container p{
+                        font-size: 1.5rem;
+                        margin-bottom: 40px;
+                        line-height: 1.2;
+    }
+    .verse-grid{
+                     display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                  }
+                  
+    .verse-cards{
+                   background: linear-gradient(135deg,rgb(248, 241, 191),rgb(136, 201, 211) ,rgb(93, 172, 127));
+                  border-radius: 12px;
+                  box-shadow: 0 0 10px palevioletred;
+                  padding: 20px;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  transition: transform 0.3s ease, background 0.3s ease;
+    }
+           
+    .verse-cards h3 {
+                     margin-bottom: 10px;
+                    font-size: 1.3rem;
+                    color: purple;
+  }
+
+  .verse-cards:hover {
+                     transform: scale(1.03);
+                    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+                         }
+  .verse-cards p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: rgb(103, 28, 103);
+  }
+    @keyframes fadeIn {
+      from{opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .prayer-card{
+                  
+                   background: linear-gradient(135deg,rgb(191, 241, 248),rgb(250, 179, 215) ,rgb(93, 172, 127));
+                  border-radius: 12px;
+                  box-shadow: 0 0 10px palevioletred;
+                  padding: 20px;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  margin-top: 20px;
+                  transition: transform 0.3s ease, background 0.3s ease;
+    }
+     .prayer-card h3 {
+                     margin-bottom: 10px;
+                    font-size: 2.3rem;
+                    color: purple;
+  }
+  .prayer-card p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: rgb(103, 28, 103);
+    font-style: italic;
+  }
+ 
+#music{
+  background: linear-gradient(135deg, #c796cd, #8bd0c0);
+              color: white;
+              padding: 60px 20px;
+              text-align: center;
+              border: 1px solid white;
+              border-radius: 20px;
+              margin-top: 20px;
+
+}
+     .music-container h2{
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .music-container p{
+                        font-size: 1.5rem;
+                        margin-bottom: 40px;
+                        line-height: 1.2;
+    }
+
+    /* Individual card */
+    .MovesCard {
+      background: linear-gradient(135deg,rgb(213, 237, 206),rgb(164, 212, 237),rgb(247, 125, 204));
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+    /* Card text */
+    .MovesCard h3 {
+      margin-bottom: 10px;
+      color: #154137;
+      font-size: 1.5rem;
+      text-shadow: 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    .MovesCard p {
+      color: #17692e;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    /* Audio styling */
+    .MovesCard audio {
+      width: 100%;
+      outline: none;
+    }
+    @media (max-width: 600px) {
+      .MovesContainer {
+        grid-template-columns: 1fr; /* stack cards vertically */
+        padding: 10px;
+      }
+    }
+
+      .MovesCard {
+        padding: 15px;
+      }
+   
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+      #scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  z-index: 100;
+  background: linear-gradient(135deg, #c796cd, #60a494);;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+#scrollTopBtn:hover {
+  background: linear-gradient(135deg, #80d0c7, #0093E9);
+  transform: scale(1.15);
+}
+ nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background: white;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      background: rgb(6, 81, 81);
+      transform: scale(1.08);
+    }
+
+    </style>
+</head>
+<body >
+    
+<h2 style="text-align: center; font-style: italic; font-size: 20px;"> A heartwarming welcome to you !</h2>
+  
+  <header>
+    <video src="img/9695b4c1784f2a3743d7ab4ae649a354 (2).mp4" autoplay muted loop></video>
+    <h1>Mercy Streams 🌊</h1>
+  </header>
+
+  <nav>
+    <a href="index.htm">HOME</a>
+
+    <a href="#prayer">PRAYER</a>
+    <a href="#music">MUSIC</a>
+    <a href="#help">HELP CENTER</a>
+    <a href="#about">ABOUT US</a>
+  </nav>
+
+   <section id="peace">
+            <div class="verse-container">
+              <h2>☮ Peaceful Bible Verses</h2>
+              <p>"My soul found calm the moment I remembered who my Shepherd is."</p>
+              </div>
+
+              <div class="verse-grid">
+                <div class="verse-cards">
+                  <h3>“Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.”</h3>
+                  <p>John 14:27</p>
+                </div>
+
+                <div class="verse-cards">
+                 <h3>“And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.”</h3>
+                 <p>Philippians 4:7</p>
+                </div>
+
+                 <div class="verse-cards">
+                 <h3>You will keep in perfect peace those whose minds are steadfast, because they trust in you.”</h3>
+                 <p>Isaiah 26:3</p>
+                </div>
+
+                <div class="verse-cards">
+                 <h3>In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety.”</h3>
+                 <p>Psalm 4:8</p>
+                </div>
+             
+                <div class="verse-cards">
+                 <h3>“Let the peace of Christ rule in your hearts, since as members of one body you were called to peace. And be thankful.”</h3>
+                 <p>Colossians 3:15</p>
+                </div>
+
+                <div class="verse-cards">
+                  <h3>“Now may the Lord of peace himself give you peace at all times and in every way. The Lord be with all of you.”</h3>
+                  <p>2 Thessalonians 3:16</p>
+                </div>
+
+                <div class="verse-cards">
+                  <h3>“Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ.”</h3>
+                  <p>Romans 5:1</p>
+                </div>
+
+                <div class="verse-cards">
+                  <h3>When the Lord takes pleasure in anyone’s way, he causes their enemies to make peace with them.”</h3>
+                  <p>Proverbs 16:7</p>
+                </div>
+
+                <div class="verse-cards">
+                  <h3>Blessed are the peacemakers, for they will be called children of God.”</h3>
+                  <p>Matthew 5:9</p>
+                </div>
+                <div class="prayer-card" id="prayer">
+                  <h3>🌸 Prayer for Peace </h3>
+                  <p>Lord, <br>
+                     My heart feels restless and heavy. I lay down my worries and fears at Your feet. <br>
+                     Let Your calm flow over me like a river, quieting every storm inside me. Fill me with Your peace that goes beyond understanding— peace that steadies my mind, softens my heart, and reminds me I am safe in Your hands. <br>
+
+                    Help me release control, trust Your plan, and walk each step with faith instead of fear. <br> May Your presence be my anchor, my comfort, and my calm.
+
+                   <br> In Jesus’ name, Amen..</p>
+                </div>
+            <section id="music">
+  <div class="MovesContainer">
+    <h2 style="text-align:center; margin-bottom:20px; font-size:2rem;">
+    “Worship the LORD with gladness, come before HIM with joyful songs”
+  </h2>
+  <p><b>Psalm 100:2</b></p>
+
+    <div class="MovesCard">
+      <h3>Banke Stuti- Glory to GOD</h3>
+      <p>Let your heart be lifted in praise.</p>
+      <audio controls >
+        <source src="img/peace 1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="MovesCard">
+      <h3>Magan- Jaago Music</h3>
+      <p>Heaven rejoices with your worship.</p>
+      <audio controls>
+        <source src="img/peace 2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="MovesCard">
+      <h3>All in All | Above All-  Michael W. Smith</h3>
+      <p>Sing and let His presence fill you.</p>
+      <audio controls>
+        <source src="img/peace 3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="MovesCard">
+      <h3>Yeshua Live | Michael Koulianos</h3>
+      <p>Sing and let His presence fill you.</p>
+      <audio controls>
+        <source src="img/peace 4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+              </div>
+   </section>
+               <footer>
+              © 2025 Mercy Streams | Designed with ❤️ for Christ
+               </footer>
+    <script>
+  typing();
+    </script> 
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+   <script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  };
+  scrollTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+ </script>        
+</body>
+</html>
